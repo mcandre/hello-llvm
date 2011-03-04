@@ -7,6 +7,6 @@ all: hello.ll
 	./$(EXECUTABLE)
 
 clean:
-	rm hello
+	rm $(EXECUTABLE)
 	rm hello.s
 	rm hello.bc
