@@ -1,6 +1,14 @@
-hello-llvm - Hello World for LLVM
+# hello-llvm - Hello World for LLVM
 
-EXAMPLE
+## HOMEPAGE
+
+[http://www.yellosoft.us/hello-llvm](http://www.yellosoft.us/hello-llvm)
+
+## EXAMPLE
 
 	$ make
-	$ ./hello
+	llvm-as hello.ll
+	llc hello.bc
+	gcc -o hello hello.s
+	$ ./hello 
+	Hello World!
