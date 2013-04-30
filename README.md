@@ -2,13 +2,13 @@
 
 ## HOMEPAGE
 
-[http://www.yellosoft.us/hello-llvm](http://www.yellosoft.us/hello-llvm)
+http://www.yellosoft.us/hello-llvm
 
 ## EXAMPLE
 
-	$ make
-	llvm-as hello.ll
-	llc hello.bc
-	gcc -o hello hello.s
-	$ ./hello 
-	Hello World!
+    $ make
+    llvm-as hello.ll
+    llc hello.bc
+    gcc -o hello hello.s
+    $ ./hello 
+    Hello World!
