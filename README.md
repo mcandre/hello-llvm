@@ -1,10 +1,10 @@
 # hello-llvm - Hello World for LLVM
 
-## HOMEPAGE
+# HOMEPAGE
 
 http://www.yellosoft.us/hello-llvm
 
-## EXAMPLE
+# EXAMPLE
 
     $ make
     llvm-as hello.ll

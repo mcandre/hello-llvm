@@ -1,0 +1,5 @@
+*.exe
+*.s
+*.bc
+hello
+Gemfile.lock
