@@ -9,3 +9,8 @@ clean:
 	-rm $(EXECUTABLE)
 	-rm hello.s
 	-rm hello.bc
+
+editorconfig:
+	flcl . | xargs -n 100 editorconfig-cli check
+
+lint: editorconfig
