@@ -1,9 +1,9 @@
 EXECUTABLE=hello
 
 all: hello.ll
-	llvm-as hello.ll
-	llc hello.bc
-	gcc -o $(EXECUTABLE) hello.s
+	@llvm-as hello.ll
+	@llc hello.bc
+	@gcc -o $(EXECUTABLE) hello.s
 
 clean:
 	-rm $(EXECUTABLE)
@@ -11,6 +11,6 @@ clean:
 	-rm hello.bc
 
 editorconfig:
-	flcl . | xargs -n 100 editorconfig-cli check
+	@git ls-files -z | grep -av patch | xargs -0 -r -n 100 $(shell npm bin)/eclint check
 
 lint: editorconfig
